@@ -9,6 +9,8 @@ public class App
 {
     /**
      * App main
+     *
+     * @param args Array of some strings.
      */
     public static void main( String[] args ) {
         String str = new App().join(args);
@@ -17,6 +19,8 @@ public class App
 
     /**
      * Join the string.
+     *
+     * @param args Array of some strings.
      */
     public String join(String[] args) {
         return StringUtils.join(args, ",");
