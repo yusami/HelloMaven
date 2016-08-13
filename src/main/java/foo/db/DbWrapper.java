@@ -19,7 +19,7 @@ public class DbWrapper
         Connection con = null;
         try {
             // Connect to MySQL.
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql", "test", "test");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?autoReconnect=true&useSSL=false", "test", "test");
             System.out.println("Connected successfully.");
 
             Statement stm = con.createStatement();
