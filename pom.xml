@@ -5,7 +5,8 @@
 
   <!-- Project -->
   <name>HelloMaven</name>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/yusami/HelloMaven</url>
+  <description>Simple Java project by Maven.</description>
   <groupId>foo.bar</groupId>
   <artifactId>HelloMaven</artifactId>
   <version>1.0.0</version>
@@ -107,7 +108,7 @@
         <artifactId>maven-site-plugin</artifactId>
         <version>3.5.1</version>
         <configuration>
-          <locales>ja</locales>
+          <locales>en</locales>
           <inputEncoding>UTF-8</inputEncoding>
           <outputEncoding>UTF-8</outputEncoding>
         </configuration>
