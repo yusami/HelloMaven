@@ -5,6 +5,8 @@ import java.sql.*;
 /**
  * Hello world!
  *
+ * TODO Add test for INSERT and UPDATE.
+ *
  * Caveats:
  *  mysql> GRANT SELECT ON mysql.* TO 'test'@'localhost' IDENTIFIED BY 'test';
  */
