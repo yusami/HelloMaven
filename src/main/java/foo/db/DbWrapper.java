@@ -36,7 +36,7 @@ public class DbWrapper
             if (con != null) {
                 try {
                     con.close();
-            		System.out.println("Disconnected successfully.");
+                    System.out.println("Disconnected successfully.");
                 } catch (SQLException e) {
                     System.out.println("Failed to disconnect.");
                 }

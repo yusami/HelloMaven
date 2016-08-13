@@ -37,7 +37,7 @@ public class AppTest
         // setup
         String[] args = {};
         // execute
-	   	  App.main(args);
+        App.main(args);
         // verify
         assertTrue( true );
     }
