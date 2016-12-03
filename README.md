@@ -17,7 +17,12 @@
 
 ## Usage
 
-* `mvn site`
+* Basic usage.
+`mvn site`
+
+### On Jenkins
+* Specify the output format to show the report on Jenkins.
+`mvn -Dcobertura.report.format=xml site`
 
 ## Install
 
