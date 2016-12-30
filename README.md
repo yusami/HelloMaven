@@ -8,21 +8,27 @@
 
 ## Description
 
-* Basic Java project with Maven.
-
+1. Build Java project with Maven.
+2. Static analysis.
+3. Unit test with coverage report.
 
 ## Requirement
 
 * Java SDK 1.8
+* Maven 3.3.9
 
 ## Usage
 
-* Basic usage.
+* Basic command.
+
 `mvn site`
 
-### On Jenkins
-* Specify the output format to show the report on Jenkins.
-`mvn -Dcobertura.report.format=xml site`
+* Run and export all reports.
+
+`clean pmd:pmd findbugs:findbugs cobertura:cobertura -Dcobertura.report.format=xml site`
+
+### Jenkins
+* Enable "Run Headless" mode on.
 
 ## Install
 
