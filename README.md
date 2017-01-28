@@ -21,11 +21,15 @@
 
 * Basic command.
 
-`mvn site`
+~~~
+mvn site
+~~~
 
 * Run and export all reports.
 
-`clean pmd:pmd findbugs:findbugs cobertura:cobertura -Dcobertura.report.format=xml site`
+~~~
+mvn clean pmd:pmd findbugs:findbugs cobertura:cobertura -Dcobertura.report.format=xml site
+~~~
 
 ### Jenkins
 * Enable "Run Headless" mode on.
@@ -36,7 +40,7 @@
 
 ## Licence
 
-* Copyright &copy; 2016 yusami
+* Copyright &copy; 2016-2017 yusami
 * Licensed under the [Apache License, Version 2.0][Apache]
 
 [Apache]: http://www.apache.org/licenses/LICENSE-2.0
