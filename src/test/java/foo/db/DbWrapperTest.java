@@ -12,7 +12,7 @@ public class DbWrapperTest
     /**
      * Create the test target.
      */
-	  private DbWrapper app = new DbWrapper();
+    private DbWrapper app = new DbWrapper();
 
     /**
      * Query Test.
