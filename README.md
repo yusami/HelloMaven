@@ -1,9 +1,8 @@
 # HelloMaven
-====
 
 ## Overview
 
-* Basic Java project with Maven.
+* Basic Java project for Maven.
 
 
 ## Description
@@ -15,7 +14,7 @@
 ## Requirement
 
 * Java SDK 1.8
-* Maven 3.3.9
+* Maven 3.5.0
 
 ## Usage
 
@@ -31,7 +30,15 @@ mvn site
 mvn clean pmd:pmd findbugs:findbugs cobertura:cobertura -Dcobertura.report.format=xml site
 ~~~
 
+* See the update candidates of libraries.
+
+~~~
+mvn versions:display-dependency-updates
+~~~
+
+
 ### Jenkins
+
 * Enable "Run Headless" mode on.
 
 ## Install
