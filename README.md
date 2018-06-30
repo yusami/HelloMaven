@@ -13,8 +13,8 @@
 
 ## Requirement
 
-* Java SDK 1.8
-* Maven 3.5.0
+* Java SDK 1.8.0
+* [Maven](https://maven.apache.org) 3.5.4
 
 ## Usage
 
