@@ -14,7 +14,7 @@
 ## Requirement
 
 * Java SDK 1.8.0
-* [Maven](https://maven.apache.org) 3.5.4
+* [Maven](https://maven.apache.org) 3.6.1
 
 ## Usage
 
@@ -47,7 +47,7 @@ mvn versions:display-dependency-updates
 
 ## Licence
 
-* Copyright &copy; 2016-2018 yusami
+* Copyright &copy; 2016-2019 yusami
 * Licensed under the [Apache License, Version 2.0][Apache]
 
 [Apache]: http://www.apache.org/licenses/LICENSE-2.0
