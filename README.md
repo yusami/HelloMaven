@@ -27,7 +27,7 @@ mvn site
 * Run and export all reports.
 
 ~~~
-mvn clean pmd:pmd findbugs:findbugs cobertura:cobertura -Dcobertura.report.format=xml site
+mvn clean pmd:pmd findbugs:findbugs jacoco:prepare-agent test jacoco:report site
 ~~~
 
 * See the update candidates of libraries.
