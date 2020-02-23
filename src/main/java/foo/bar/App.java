@@ -21,6 +21,7 @@ public class App
      * Join the string.
      *
      * @param args Array of some strings.
+     * @return Joined string
      */
     public String join(String[] args) {
         return StringUtils.join(args, ",");

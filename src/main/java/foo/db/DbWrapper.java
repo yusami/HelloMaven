@@ -8,7 +8,7 @@ import java.sql.*;
  * TODO Add test for INSERT and UPDATE.
  *
  * Caveats:
- *  mysql> GRANT SELECT ON mysql.* TO 'test'@'localhost' IDENTIFIED BY 'test';
+ *   GRANT SELECT ON mysql.* TO 'test'@'localhost' IDENTIFIED BY 'test';
  */
 public class DbWrapper
 {
