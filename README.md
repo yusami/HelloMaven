@@ -14,26 +14,26 @@
 ## Requirement
 
 * Java SDK 1.8.0
-* [Maven](https://maven.apache.org) 3.6.1
+* [Maven](https://maven.apache.org) 3.6.3
 
 ## Usage
 
 * Basic command.
 
 ~~~
-mvn site
+$ mvn site
 ~~~
 
 * Run and export all reports.
 
 ~~~
-mvn clean pmd:pmd findbugs:findbugs jacoco:prepare-agent test jacoco:report site
+$ mvn clean pmd:pmd findbugs:findbugs jacoco:prepare-agent test jacoco:report site
 ~~~
 
 * See the update candidates of libraries.
 
 ~~~
-mvn versions:display-dependency-updates
+$ mvn versions:display-dependency-updates
 ~~~
 
 
@@ -47,7 +47,7 @@ mvn versions:display-dependency-updates
 
 ## Licence
 
-* Copyright &copy; 2016-2020 yusami
+* Copyright &copy; 2016-2021 yusami
 * Licensed under the [Apache License, Version 2.0][Apache]
 
 [Apache]: http://www.apache.org/licenses/LICENSE-2.0
