@@ -8,7 +8,8 @@ import java.sql.*;
  * TODO Add test for INSERT and UPDATE.
  *
  * Caveats:
- *   GRANT SELECT ON mysql.* TO 'test'@'localhost' IDENTIFIED BY 'test';
+ *   mysql> CREATE USER 'java-user'@'localhost' IDENTIFIED BY 'java-user';
+ *   mysql> GRANT all ON mysql.* TO 'java-user'@'localhost';
  */
 public class DbWrapper
 {
@@ -21,7 +22,7 @@ public class DbWrapper
         ResultSet rs = null;
         try {
             // Connect to MySQL.
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?autoReconnect=true&useSSL=false", "test", "test");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=GMT%2B9:00&rewriteBatchedStatements=true", "java-user", "java-user");
             System.out.println("Connected successfully.");
 
             stm = con.createStatement();
