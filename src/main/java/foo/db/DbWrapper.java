@@ -22,7 +22,7 @@ public class DbWrapper
         ResultSet rs = null;
         try {
             // Connect to MySQL.
-            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=GMT%2B9:00&rewriteBatchedStatements=true", "java-user", "java-user");
+            con = DriverManager.getConnection("jdbc:mysql://localhost:3306/mysql?characterEncoding=utf8&allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=GMT%2B9:00&rewriteBatchedStatements=true&connectionTimeZone=SERVER", "java-user", "java-user");
             System.out.println("Connected successfully.");
 
             stm = con.createStatement();
