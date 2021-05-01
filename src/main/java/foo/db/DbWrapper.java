@@ -8,8 +8,8 @@ import java.sql.*;
  * TODO Add test for INSERT and UPDATE.
  *
  * Caveats:
- *   mysql> CREATE USER 'java-user'@'localhost' IDENTIFIED BY 'java-user';
- *   mysql> GRANT all ON mysql.* TO 'java-user'@'localhost';
+ *   $ CREATE USER 'java-user'@'localhost' IDENTIFIED BY 'java-user';
+ *   $ GRANT all ON mysql.* TO 'java-user'@'localhost';
  */
 public class DbWrapper
 {
