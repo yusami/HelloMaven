@@ -14,7 +14,7 @@
 ## Requirement
 
 * Java SDK 1.8.0
-* [Maven](https://maven.apache.org) 3.6.3
+* [Maven](https://maven.apache.org) 3.8.2
 * [MySQL](https://www.mysql.com) 8.0
 
 ## Usage
