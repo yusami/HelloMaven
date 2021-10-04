@@ -138,6 +138,13 @@
           </execution>
         </executions>
       </plugin>
+
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <version>4.4.1</version>
+      </plugin>
+
       <plugin>
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>3.1.2</version>
@@ -171,15 +178,16 @@
           </rulesets>
         </configuration>
       </plugin>
-      <!-- <plugin> -->
-      <!--   <groupId>org.codehaus.mojo</groupId> -->
-      <!--   <artifactId>findbugs&#45;maven&#45;plugin</artifactId> -->
-      <!--   <version>3.0.4</version> -->
-      <!--   <configuration> -->
-      <!--     <findbugsXmlOutput>true</findbugsXmlOutput> -->
-      <!--     <xmlOutput>true</xmlOutput> -->
-      <!--   </configuration> -->
-      <!-- </plugin> -->
+      <plugin>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <version>4.4.1</version>
+        <configuration>
+          <xmlOutput>true</xmlOutput>
+          <!-- Optional directory to put spotbugs xdoc xml report -->
+          <xmlOutputDirectory>target/site</xmlOutputDirectory>
+        </configuration>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
@@ -265,6 +273,11 @@
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
         <version>3.12.0</version>
+    </dependency>
+    <dependency>
+        <groupId>com.github.spotbugs</groupId>
+        <artifactId>spotbugs-maven-plugin</artifactId>
+        <version>4.4.1</version>
     </dependency>
     <dependency>
       <groupId>mysql</groupId>
