@@ -14,7 +14,7 @@
 ## Requirement
 
 * Java SE 11
-* [Maven](https://maven.apache.org) 3.8.2
+* [Maven](https://maven.apache.org) 3.8.4
 * [MySQL](https://www.mysql.com) 8.0
 
 ## Usage
@@ -48,7 +48,7 @@ $ mvn versions:display-dependency-updates
 
 ## Licence
 
-* Copyright &copy; 2016-2021 yusami
+* Copyright &copy; 2016-2022 yusami
 * Licensed under the [Apache License, Version 2.0][Apache]
 
 [Apache]: http://www.apache.org/licenses/LICENSE-2.0
