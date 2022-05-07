@@ -9,12 +9,14 @@
   <description>Simple Java project by Maven.</description>
   <groupId>foo.bar</groupId>
   <artifactId>HelloMaven</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <packaging>jar</packaging>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
   </properties>
 
   <build>
@@ -22,10 +24,8 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.6.1</version>
+        <version>3.10.1</version>
         <configuration>
-          <source>1.7</source>
-          <target>1.7</target>
           <debug>true</debug>
           <debuglevel>lines,vars,source</debuglevel>
         </configuration>
@@ -86,7 +86,7 @@
       <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
-        <version>0.8.7</version>
+        <version>0.8.8</version>
         <executions>
           <execution>
             <id>prepare-agent</id>
@@ -97,7 +97,7 @@
             <configuration>
               <propertyName>jacocoArgs</propertyName>
               <includes>
-                <include>*</include>
+                <include>src/**</include>
               </includes>
             </configuration>
           </execution>
@@ -147,7 +147,7 @@
 
       <plugin>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.1.2</version>
+        <version>3.3.0</version>
         <configuration>
           <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
         </configuration>
@@ -160,17 +160,16 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>3.0.0-M5</version>
+        <version>3.0.0-M6</version>
       </plugin>
 
       <!-- Static Analysis -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.15.0</version>
+        <version>3.16.0</version>
         <configuration>
           <skipEmptyReport>false</skipEmptyReport>
-          <targetJdk>1.7</targetJdk>
           <rulesets>
             <!-- Two rule sets that come bundled with PMD -->
             <ruleset>/rulesets/java/braces.xml</ruleset>
@@ -201,7 +200,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
-        <version>3.1.1</version>
+        <version>3.2.0</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -282,7 +281,7 @@
     <dependency>
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>8.0.28</version>
+      <version>8.0.29</version>
     </dependency>
   </dependencies>
 </project>

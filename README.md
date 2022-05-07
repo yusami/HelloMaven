@@ -14,7 +14,7 @@
 ## Requirement
 
 * Java SE 11
-* [Maven](https://maven.apache.org) 3.8.4
+* [Maven](https://maven.apache.org) 3.8
 * [MySQL](https://www.mysql.com) 8.0
 
 ## Usage
