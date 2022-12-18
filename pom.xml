@@ -127,7 +127,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.3.0</version>
         <executions>
           <execution>
             <phase>test</phase>
@@ -147,7 +147,7 @@
 
       <plugin>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.4.1</version>
         <configuration>
           <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
         </configuration>
@@ -167,7 +167,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.16.0</version>
+        <version>3.19.0</version>
         <configuration>
           <skipEmptyReport>false</skipEmptyReport>
           <rulesets>
@@ -190,7 +190,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.1.2</version>
+        <version>3.2.0</version>
         <reportSets>
           <reportSet>
               <reports><report>checkstyle</report></reports>
@@ -200,12 +200,12 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
-        <version>3.2.0</version>
+        <version>3.3.0</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.3.2</version>
+        <version>3.4.1</version>
         <reportSets>
           <reportSet>
             <id>aggregate</id>
