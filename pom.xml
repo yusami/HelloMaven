@@ -142,7 +142,7 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.7.3.4</version>
+        <version>4.7.3.6</version>
       </plugin>
 
       <plugin>
@@ -180,7 +180,7 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.7.3.4</version>
+        <version>4.7.3.6</version>
         <configuration>
           <xmlOutput>true</xmlOutput>
           <!-- Optional directory to put spotbugs xdoc xml report -->
@@ -271,12 +271,12 @@
     <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-lang3</artifactId>
-        <version>3.12.0</version>
+        <version>3.13.0</version>
     </dependency>
     <dependency>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.7.3.4</version>
+        <version>4.7.3.6</version>
     </dependency>
     <dependency>
       <groupId>com.mysql</groupId>

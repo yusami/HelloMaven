@@ -13,7 +13,7 @@
 
 ## Requirement
 
-* Java SE 11
+* JDK 21
 * [Maven](https://maven.apache.org) 3.8
 * [MySQL](https://www.mysql.com) 8.0
 
