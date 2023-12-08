@@ -118,7 +118,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
-        <version>3.9.1</version>
+        <version>3.12.1</version>
         <configuration>
           <locales>en</locales>
           <inputEncoding>UTF-8</inputEncoding>
@@ -129,7 +129,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.3.1</version>
         <executions>
           <execution>
             <phase>test</phase>
@@ -144,12 +144,12 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.8.1.0</version>
+        <version>4.8.2.0</version>
       </plugin>
 
       <plugin>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>3.4.3</version>
+        <version>3.5.0</version>
         <configuration>
           <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
         </configuration>
@@ -162,14 +162,14 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
-        <version>3.0.0</version>
+        <version>3.2.2</version>
       </plugin>
 
       <!-- Static Analysis -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-pmd-plugin</artifactId>
-        <version>3.20.0</version>
+        <version>3.21.2</version>
         <configuration>
           <skipEmptyReport>false</skipEmptyReport>
           <rulesets>
@@ -182,7 +182,7 @@
       <plugin>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.8.1.0</version>
+        <version>4.8.2.0</version>
         <configuration>
           <xmlOutput>true</xmlOutput>
           <!-- Optional directory to put spotbugs xdoc xml report -->
@@ -192,7 +192,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-checkstyle-plugin</artifactId>
-        <version>3.2.2</version>
+        <version>3.3.1</version>
         <reportSets>
           <reportSet>
               <reports><report>checkstyle</report></reports>
@@ -202,12 +202,12 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jxr-plugin</artifactId>
-        <version>3.3.0</version>
+        <version>3.3.1</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-javadoc-plugin</artifactId>
-        <version>3.5.0</version>
+        <version>3.6.3</version>
         <reportSets>
           <reportSet>
             <id>aggregate</id>
@@ -227,7 +227,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>taglist-maven-plugin</artifactId>
-        <version>2.4</version>
+        <version>3.0.0</version>
         <configuration>
           <tagListOptions>
             <tagClasses>
@@ -254,7 +254,7 @@
   <dependencies>
     <dependency>
         <groupId>org.hamcrest</groupId>
-        <artifactId>hamcrest</artifactId>
+      <artifactId>hamcrest</artifactId>
         <version>2.2</version>
         <scope>test</scope>
     </dependency>
@@ -278,7 +278,7 @@
     <dependency>
         <groupId>com.github.spotbugs</groupId>
         <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.8.1.0</version>
+        <version>4.8.2.0</version>
     </dependency>
     <dependency>
       <groupId>com.mysql</groupId>
